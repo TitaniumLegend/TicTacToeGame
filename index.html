@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="game-title">TIC TAC TOE</h1>
+    <div class="game-setup" id="game-setup">
+      <div class="mode-select">
+        <button id="vs-ai">Vs AI</button>
+        <button id="vs-friend">Vs Friend</button>
+      </div>
+      <div class="name-inputs" id="name-inputs" style="display:none;">
+        <div id="ai-name-input" style="display:none;">
+          <input type="text" id="player1-name" placeholder="Enter your name" maxlength="12" />
+          <button id="name-next-ai">Next</button>
+        </div>
+        <div id="friend-name-inputs" style="display:none;">
+          <input type="text" id="player1-name-friend" placeholder="Player 1 name" maxlength="12" />
+          <input type="text" id="player2-name-friend" placeholder="Player 2 name" maxlength="12" />
+          <button id="name-next-friend">Next</button>
+        </div>
+      </div>
+      <!-- Symbol selection removed: User 1 is X, User 2/AI is O by default -->
+    </div>
+    <div class="game-area" id="game-area" style="display:none;">
+      <div class="board" id="board"></div>
+      <div class="sidebar">
+        <div class="scoreboard-box">
+          <h3>Games Won</h3>
+          <div id="score-user1">User 1: 0</div>
+          <div id="score-user2">User 2: 0</div>
+        </div>
+        <button id="restart-btn" style="display:none;">Restart</button>
+      </div>
+    </div>
+    <div class="game-result" id="game-result" style="display:none;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
