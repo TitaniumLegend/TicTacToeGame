@@ -33,7 +33,7 @@
   transform: scale(1.05);
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: Calibri, Arial, sans-serif;
   background: #800000;
   margin: 0;
   padding: 0;
@@ -63,6 +63,7 @@ body {
   text-shadow: 2px 2px 8px #400000;
   width: 100%;
   padding-top: 0;
+  font-family: Calibri, Arial, sans-serif;
 }
 
 .game-setup {
